@@ -37,8 +37,14 @@ const Navbar = () => {
             {/* Desktop Navbar */}
             <ul className="hidden md:flex gap-3 items-center capitalize font-medium">
                 {navItems.map((item) => (
-                    <li key={item.name} className="hover:text-green-500 transition duration-300 rounded-md">
-                        <Link href={item.path} className="px-4 py-2 block">
+                    <li
+                        key={item.name}
+                        className="hover:text-green-500 transition duration-300 rounded-md"
+                    >
+                        <Link
+                            href={item.path}
+                            className="px-4 py-2 block font-bold" // Added font-bold here
+                        >
                             {item.name}
                         </Link>
                     </li>
@@ -82,7 +88,11 @@ const Navbar = () => {
                     <ul className="flex flex-col gap-10 capitalize font-serif">
                         {navItems.map((item) => (
                             <li key={item.name}>
-                                <Link href={item.path} onClick={() => setMobileMenuOpen(false)}>
+                                <Link
+                                    href={item.path}
+                                    onClick={() => setMobileMenuOpen(false)}
+                                    className="font-bold" // Added font-bold here
+                                >
                                     {item.name}
                                 </Link>
                             </li>

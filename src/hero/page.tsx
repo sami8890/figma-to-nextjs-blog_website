@@ -21,13 +21,17 @@ export default function Home() {
       </div>
       
       {/* Image Section */}
-      <div className="flex justify-center mt-8 md:mt-0">
+      <div className="flex justify-center px-1 mt-8 md:mt-0 pr-0">
         <Image
-          src="/web.png"
+          src="/hero/image.png"
           alt="Desktop and smartphone app development"
-          width={300}
-          height={300}
-          className="rounded-3xl md:w-[400px] md:h-[300px] xl:w-[500px] xl:h-[400px]"
+          width={400} 
+          height={350} 
+          layout="intrinsic" 
+          quality={90} 
+          placeholder="blur" 
+          blurDataURL="/hero/image-blur.png" 
+          className="rounded-lg"
         />
       </div>
     </section>

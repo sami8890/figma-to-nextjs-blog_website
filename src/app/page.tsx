@@ -1,14 +1,15 @@
 import Section from '@/components/second-section'
 
 import React from 'react'
-import Hero from '../features/page'
+import Hero from '../hero/page'
+import Features from './features/page'
 
 export default function Home() {
   return (
     <div>
-      <Hero/>
-      <Section/>
-
+      <Hero />
+      <Section />
+      <Features/>
     </div>
   )
 }
