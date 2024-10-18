@@ -84,14 +84,14 @@ const Navbar = () => {
 
             {/* Mobile Menu */}
             {isMobileMenuOpen && (
-                <div className="absolute flex flex-col justify-center items-center text-4xl gap-7 top-20 right-0 shadow-md backdrop-blur-2xl bg-slate-800 text-white p-4 z-10 w-screen h-screen md:hidden transition-all duration-300">
-                    <ul className="flex flex-col gap-10 capitalize font-serif">
+                <div className="absolute flex flex-col justify-center items-center text-4xl gap-7 top-20 right-0 shadow-md backdrop-blur-2xl bg-accent text-black p-4 z-10 w-screen h-screen md:hidden transition-all duration-300">
+                    <ul className="flex flex-col gap-10 capitalize font-medium">
                         {navItems.map((item) => (
                             <li key={item.name}>
                                 <Link
                                     href={item.path}
                                     onClick={() => setMobileMenuOpen(false)}
-                                    className="font-bold" // Added font-bold here
+                                    className="font-sans" 
                                 >
                                     {item.name}
                                 </Link>

@@ -106,6 +106,7 @@ const Features = () => {
             </p>
             <button className="text-sm items-center md:text-lg xl:text-xl bg-green-600 h-10 md:h-12 xl:h-14 w-28 md:w-32 xl:w-40 rounded-sm text-white hover:bg-green-700 mt-6">
               Learn more
+              
             </button>
           </div>
         </div>
